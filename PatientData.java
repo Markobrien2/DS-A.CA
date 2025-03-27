@@ -17,6 +17,8 @@ public class PatientData {
     public PatientData(){
         name = new String();
         gpName = new String();
+        inPatient = true;
+        age = 0;
     }
     public void setName(String n){
         name = n;
@@ -29,5 +31,17 @@ public class PatientData {
     }
     public void setAge(int a){
         age = a;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getGPName(){
+        return gpName;
+    }
+    public boolean getInPatient(){
+        return inPatient;
+    }
+    public int getAge(){
+        return age;
     }
 }

@@ -6,7 +6,7 @@ package bloodtestscheduler;
 import java.util.*;
 /**
  *
- * @author markobrien 
+ * @author mark o'brien - 22103627 
  */
 public class BloodTestScheduler {
 

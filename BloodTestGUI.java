@@ -6,7 +6,7 @@ package bloodtestscheduler;
 
 /**
  *
- * @author marky
+ * @author mark o'brien - 22103627
  */
 public class BloodTestGUI extends javax.swing.JFrame {
 

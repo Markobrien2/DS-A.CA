@@ -12,24 +12,24 @@ public class PatientData {
     private String name;
     private String gpName;
     private boolean inPatient;
-    private int age;
+    private String age;
     
     public PatientData(){
         name = new String();
         gpName = new String();
         inPatient = true;
-        age = 0;
+        age = new String();
     }
     public void setName(String n){
         name = n;
     }
     public void setGPName(String g){
-        name = g;
+        gpName = g;
     }
     public void setInPatient(boolean p){
         inPatient = p;
     }
-    public void setAge(int a){
+    public void setAge(String a){
         age = a;
     }
     public String getName(){
@@ -41,7 +41,7 @@ public class PatientData {
     public boolean getInPatient(){
         return inPatient;
     }
-    public int getAge(){
+    public String getAge(){
         return age;
     }
 }

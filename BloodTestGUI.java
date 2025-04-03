@@ -280,7 +280,14 @@ public class BloodTestGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_NextBtnActionPerformed
 
     private void NoShowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NoShowBtnActionPerformed
-        
+        if(!btQueue.isEmpty()){
+            BTestElement btelem = (BTestElement)btQueue.dequeue();
+            PatientData p1 = (PatientData)btelem.getData();
+            
+            jTextArea1.append(p1.getName() + " is now marked as 'No Show'.");
+        }
+        else
+            jTextArea1.append("There are no more patients waiting"+ "\n");
     }//GEN-LAST:event_NoShowBtnActionPerformed
 
     private void ExitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitBtnActionPerformed
